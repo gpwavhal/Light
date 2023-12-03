@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Feedback.com</h1>
+        <div id="timer">30</div>
+        <form id="feedbackForm">
+            <label for="textFeedback">Enter your feedback:</label>
+            <textarea id="textFeedback" rows="4" cols="50"></textarea>
+
+            <p>Which fruit is your favorite?</p>
+            <input type="radio" name="fruit" value="apple"> Apple
+            <input type="radio" name="fruit" value="banana"> Banana
+            <input type="radio" name="fruit" value="orange"> Orange
+
+            <p>How many fruits do you eat in a day?</p>
+            <input type="number" id="fruitCount" name="fruitCount" min="0">
+
+            <button type="button" onclick="submitFeedback()">Submit</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
